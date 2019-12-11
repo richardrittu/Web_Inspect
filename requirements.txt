@@ -1,6 +1,2 @@
-<<<<<<< HEAD
 pytest==4.6.7
-=======
-pytest==4.6.5
->>>>>>> master
 flask==1.1.1
