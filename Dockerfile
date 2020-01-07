@@ -11,5 +11,5 @@ RUN pip install -r requirements.txt
 # Bundle app source
 COPY scripts /opt/app
 
-EXPOSE 5000
+EXPOSE 80
 CMD [ "python", "hello.py" ]
