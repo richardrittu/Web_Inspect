@@ -14,3 +14,4 @@ COPY scripts /opt/app
 
 EXPOSE 80
 CMD [ "python", "hello.py" ]
+CMD ["python", "check.py"]
