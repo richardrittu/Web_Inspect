@@ -7,11 +7,10 @@ WORKDIR /opt/app
 COPY requirements.txt ./
 
 #Custom Hostname & Install Softwares
-RUN echo $(grep $(hostname) /etc/hosts | cut -f1) webinspect.com >> /etc/hosts && pip install -r requirements.txt
+RUN pip install -r requirements.txt
 
 # Bundle app source
 COPY scripts /opt/app
 
 EXPOSE 80
 CMD [ "python", "hello.py" ]
-CMD ["python", "check.py"]
